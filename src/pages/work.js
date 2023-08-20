@@ -11,14 +11,14 @@ const Work =() =>{
     // const scroll=useScroll()
     return (
         <main className=' h-[93%] w-full overflow-y-auto'>
-            <div className="h-[60%] w-full  flex flex-row  gap-8 mb-2">
-                <motion.div className="h-full w-[48%]  rounded-xl shadow-xl ml-2"
+            <div className="h-[60%] w-full  flex flex-row  gap-8 ">
+                <motion.div className="h-full w-[46%]  rounded-xl shadow-2xl shadow-gray-400 ml-6"
                 whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
 
                     <Image src={game} width={600}  alt="game"  className="h-full w-full rounded-xl object-fit"  priority={true} />
                 </motion.div>
                 
-                <motion.div className="h-full w-[46%]  rounded-xl shadow-xl"
+                <motion.div className="h-full w-[42%] border border-black shadow-gray-400 rounded-xl shadow-2xl ml-4"
                 whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
                     <h3 className="text-2xl text-center   font-semibold">Game</h3>
                 <h3 className="text-md text-gray-500 text-left p-10 font-medium">
@@ -29,13 +29,13 @@ const Work =() =>{
                 </motion.div>
             </div>
             <div className="h-[60%] w-full flex flex-row gap-8 mb-2">
-                <motion.div className="h-full w-[48%]  rounded-xl shadow-xl ml-2"
+                <motion.div className="h-full w-[46%]  rounded-xl shadow-2xl shadow-gray-400 ml-6 mt-6"
                 whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
                     <Image src={joke} width={600} height={110} alt="game" className="h-full w-full rounded-xl"  priority={true} />
                 </motion.div>
                 
-                <motion.div className="h-full w-[46%]  rounded-xl shadow-xl "
-                whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                <motion.div className="h-full w-[42%]  rounded-xl shadow-2xl shadow-gray-400 border border-black border-2 ml-4 mt-6  "
+                whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
                         <h3 className="text-2xl text-center   font-semibold">JokeAPI</h3>
                     <h3 className="text-md text-gray-500 text-left p-10 font-medium">
                         This Is Joke website generating random joke    
@@ -45,12 +45,12 @@ const Work =() =>{
             </div>
 
             <div className="h-[60%] w-full flex flex-row gap-8 mb-2">
-                <motion.div className="h-full w-[48%]  rounded-xl shadow-xl ml-2"
-                whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                <motion.div className="h-full w-[46%]  rounded-xl shadow-2xl ml-6 mt-14 shadow-gray-400"
+                whileHover={{ scale: 1.1 }} transition={{ stiffness: 300, damping: 10 }}>
                     <Image src={weather} width={600} height={110} alt="game" className="h-full w-full rounded-xl"  priority={true} />
                 </motion.div>
                 
-                <motion.div className="h-full w-[46%] rounded-xl shadow-xl "
+                <motion.div className="h-full w-[42%] rounded-xl shadow-2xl mt-14 ml-4 shadow-gray-400 border border-black"
                 whileHover={{ scale: 1.1}} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
                     <h3 className="text-2xl text-center font-semibold">ReactWeather</h3>
                     <h3 className="text-md text-gray-500 text-left p-10 font-medium">
@@ -62,12 +62,12 @@ const Work =() =>{
             </div>
 
             <div className="h-[60%] w-full flex flex-row gap-8 mb-2">
-                <motion.div className="h-full w-[48%]  rounded-xl shadow-xl ml-2"
-                whileHover={{ scale: 1.1 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                <motion.div className="h-full w-[46%]  rounded-xl shadow-2xl ml-6 mt-28 shadow-gray-400"
+                whileHover={{ scale: 1.1 }} transition={{ type: "spring" ,stiffness:300,daming:10}}>
                     <Image src={client} width={600} height={110} alt="game" className="h-full w-full rounded-xl" priority={true} />
                 </motion.div>
                 
-                <motion.div className="h-full w-[46%] rounded-xl overflow-scroll shadow-xl "
+                <motion.div className="h-full w-[42%] shadow-gray-400 rounded-xl overflow-scroll ml-4  border border-black  shadow-2xl mt-28 "
                 whileHover={{ scale: 1.1}} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
                     <h3 className="text-2xl text-center   font-semibold">My Bio Backup</h3>
                     <h3 className="text-md text-gray-500 text-left p-10 font-medium">
