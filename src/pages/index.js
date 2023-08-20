@@ -6,12 +6,12 @@ import Link from 'next/link'
 
 import name from "../images/name.png"
 import {motion}  from "framer-motion"
-import { useEffect } from "react";
+import { lazy, useEffect } from "react";
 import AOS from 'aos'
 const Home=()=>{
   useEffect(()=>{
 
-    console.log(AOS);
+    // console.log(AOS);
     AOS.init({
         duration:3000
     });
@@ -23,25 +23,12 @@ const Home=()=>{
       flex flex-col justify-center gap-10 items-center flex-wrap overflow-hidden'>
       
            
-            <motion.div
-      className="h-[50%] w-[40%] "
-      animate={{
-        scale: [1, 2, 2,1],
-        rotate: [0, 0, 180, 180, 0],
-        borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-      }}
-      transition={{
-        duration: 2,
-        ease: "easeInOut",
-        times: [0,  0.2, 0.5, 0.8, 1],
-        repeat: Infinity,
-        repeatDelay: 1
-      }}>
+            {/* <motion.div>
       
-                <Image src={name} alt="name" className="h-full opacity-200 bg-remove"  />
+                <Image src={name} alt="name" className="h-full opacity-200 bg-remove" priority={true} />
       
       </motion.div>
-            
+             */}
         
             <div className='border  h-[70%] w-[40%] flex flex-col 
             flex-wrap justify-end rounded-full'>

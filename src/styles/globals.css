@@ -18,9 +18,9 @@
 
 body {
    color: rgb(v ar(--foreground-rgb));
-   background-image: url('../images/port.jpg');
+   background-image: url('../images/port.jpg'); 
    background-size:cover ;
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
   /* background: linear-gradient(
       to bottom,
       transparent,

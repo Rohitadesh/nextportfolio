@@ -1,15 +1,8 @@
-import {web,tools,frame} from "./webtech"
-import { useEffect } from "react";
-import AOS from "aos";
+import {web,tools,frame} from "../components/webtech"
+// import { useEffect } from "react";
+// import AOS from "aos";
 const About =()=>{
-    useEffect(()=>{
-
-        console.log(AOS);
-        AOS.init({
-            duration:3000
-        });
-        AOS.refresh();
-    },[])
+   
     return(
         <div className="h-[93%] w-full  overflow-y-auto flex flex-row flex-wrap 
             justify-center items-center gap-4 ">
@@ -79,10 +72,10 @@ const About =()=>{
 
                     <div className="h-[30%] w-full  flex flex-wrap flex-row justify-center gap-6 items-center ">
                         {
-                            web.map((web_element)=>{
+                            web.map((web_element,index)=>{
 
                                 return(
-                                    <div className="h-20 w-20 rounded-full shadow-gray-500
+                                    <div key={index} className="h-20 w-20 rounded-full shadow-gray-500
                                          shadow-2xl flex flex-wrap flex-col justify-center items-center ">
                                         <h2 className="text-sm italic">{web_element}</h2>
                                     </div>
@@ -93,9 +86,9 @@ const About =()=>{
 
                     <div className="h-[30%] w-full  flex flex-wrap flex-row justify-center gap-6 items-center ">
                         {
-                            frame.map((element_lib)=>{
+                            frame.map((element_lib,index1)=>{
                                 return(
-                                    <div className="h-20 w-20  rounded-full shadow-gray-500
+                                    <div key={index1} className="h-20 w-20  rounded-full shadow-gray-500
                                         shadow-2xl flex flex-wrap flex-row justify-center items-center">
                                         <h2 className="text-sm italic">{element_lib}</h2>
                                     </div>
@@ -106,9 +99,9 @@ const About =()=>{
 
                     <div className="h-[24%] w-full  flex flex-wrap flex-col justify-center items-center">
                         {
-                            tools.map((element_tools)=>{
+                            tools.map((element_tools,index_tools)=>{
                                 return(
-                                    <div className="h-20 w-20  rounded-full  shadow-xl shadow-gray-500
+                                    <div key={index_tools} className="h-20 w-20  rounded-full  shadow-xl shadow-gray-500
                                        shadow-2xl flex flex-wrap flex-row justify-center items-center">
                                         <h2 className="text-sm italic">{element_tools}</h2>
                                     </div>
