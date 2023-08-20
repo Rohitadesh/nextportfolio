@@ -23,12 +23,24 @@ const Home=()=>{
       flex flex-col justify-center gap-10 items-center flex-wrap overflow-hidden'>
       
            
-            {/* <motion.div>
+            <motion.div className="h-[50%] w-[40%] "
+      animate={{
+        scale: [1, 2, 2,1],
+        rotate: [0, 0, 180, 180, 0],
+        borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+      }}
+      transition={{
+        duration: 2,
+        ease: "easeInOut",
+        times: [0,  0.2, 0.5, 0.8, 1],
+        repeat: Infinity,
+        repeatDelay: 1 
+        }}>
       
                 <Image src={name} alt="name" className="h-full opacity-200 bg-remove" priority={true} />
       
-      </motion.div>
-             */}
+            </motion.div>
+            
         
             <div className='border  h-[70%] w-[40%] flex flex-col 
             flex-wrap justify-end rounded-full'>
